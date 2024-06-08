@@ -4,7 +4,7 @@ import React from 'react';
 export default function FlatCard() {
   return (
     <View>
-      <Text style={styles.heading}>Flat Card</Text>
+      <Text style={styles.heading}>Flat Cards</Text>
       <View style={styles.container}>
         <View style={[styles.cardOne, styles.card]}>
           <Text>Red</Text>
@@ -18,9 +18,6 @@ export default function FlatCard() {
         <View style={[styles.cardFour, styles.card]}>
           <Text>Yellow</Text>
         </View>
-        <View style={[styles.cardFive, styles.card]}>
-          <Text>Brown</Text>
-        </View>
       </View>
     </View>
   );
@@ -31,7 +28,7 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#000',
+    // color: '#',
     paddingHorizontal: 8,
   },
   container: {
@@ -61,8 +58,5 @@ const styles = StyleSheet.create({
   },
   cardFour: {
     backgroundColor: 'yellow',
-  },
-  cardFive: {
-    backgroundColor: 'brown',
   },
 });
