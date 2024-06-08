@@ -21,6 +21,7 @@ export default function FancyCard() {
           <Text style={styles.Desc}>
             sfjildaofjirbf baonfdjhfigafo jbdiohfe fiewfuuewio hdbaofeu8fohu
           </Text>
+          <Text style={styles.Footer}>12 July 2024</Text>
         </View>
       </View>
     </View>
@@ -34,13 +35,57 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
   },
 
-  card: {},
-  ElevatedCard: {},
+  card: {
+    marginVertical: 12,
+    marginHorizontal: 16,
+    width: 350,
+    height: 350,
+    margin: 8,
+    borderRadius: 6,
+  },
+  ElevatedCard: {
+    backgroundColor: '#fff',
+    elevation: 3,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+  },
   cardImage: {
     height: 180,
+    borderTopLeftRadius: 6,
+    borderTopRightRadius: 6,
+    marginBottom: 8,
   },
-  cardBody: {},
-  Title: {},
-  Label: {},
-  Desc: {},
+  cardBody: {
+    flex: 1,
+    flexGrow: 1,
+    paddingHorizontal: 12,
+  },
+  Title: {
+    color: '#000000',
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 4,
+  },
+  Label: {
+    color: '#000000',
+    fontSize: 14,
+    marginBottom: 6,
+  },
+  Desc: {
+    color: '#000000',
+    fontSize: 12,
+    marginBottom: 12,
+    marginTop: 6,
+    flexShrink: 1,
+  },
+  Footer: {
+    color: '#000000',
+    fontSize: 12,
+    fontWeight: 'bold',
+    marginBottom: 12,
+    marginTop: 6,
+    flexShrink: 1,
+  },
 });
