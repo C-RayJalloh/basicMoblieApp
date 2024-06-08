@@ -8,10 +8,10 @@ function App() {
   return (
     <SafeAreaView>
       <ScrollView>
-        {/* the Flat cards div/ container */}
         <View>
           <FlatCard />
           <ElevatedCard />
+          <FancyCard />
           <FancyCard />
         </View>
       </ScrollView>
