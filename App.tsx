@@ -1,14 +1,18 @@
-import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {View, SafeAreaView, ScrollView} from 'react-native';
+import React from 'react';
+import FlatCard from './components/FlatCard';
 
-export class App extends Component {
-  render() {
-    return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
-    );
-  }
+function App() {
+  return (
+    <SafeAreaView>
+      <ScrollView>
+        {/* the Flat cards */}
+        <View>
+          <FlatCard />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
 
 export default App;
