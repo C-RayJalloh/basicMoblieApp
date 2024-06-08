@@ -30,7 +30,7 @@ export default function ActionCard() {
           style={styles.cardImage}
         />
         <View style={styles.cardBody}>
-          <Text numberOfLines={5}>
+          <Text numberOfLines={3}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             libero voluptatem veniam quisquam quidem accusantium, dolores
             voluptatibus voluptatum architecto doloremque obcaecati aspernatur
@@ -59,14 +59,52 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 8,
   },
-  card: {},
-  elevatedCard: {},
-  headingContainer: {},
-  headerText: {},
+  card: {
+    width: 350,
+    height: 340,
+    borderRadius: 6,
+    marginVertical: 12,
+    marginHorizontal: 16,
+  },
+  elevatedCard: {
+    backgroundColor: '#12aca4',
+    elevation: 3,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: '#333',
+    shadowOpacity: 0.4,
+  },
+  headingContainer: {
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerText: {
+    color: '#000',
+    fontSize: 16,
+    fontWeight: '600',
+  },
   cardImage: {
     height: 180,
   },
-  cardBody: {},
-  footer: {},
-  Links: {},
+  cardBody: {
+    padding: 10,
+  },
+  footer: {
+    padding: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  Links: {
+    fontSize: 16,
+    color: '#000000',
+    backgroundColor: '#0a51c4d6',
+    paddingHorizontal: 20,
+    paddingVertical: 6,
+    borderRadius: 6,
+  },
 });
