@@ -6,7 +6,7 @@ function App() {
   return (
     <SafeAreaView>
       <ScrollView>
-        {/* the Flat cards */}
+        {/* the Flat cards div/ container */}
         <View>
           <FlatCard />
         </View>
