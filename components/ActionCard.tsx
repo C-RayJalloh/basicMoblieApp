@@ -63,7 +63,9 @@ const styles = StyleSheet.create({
   elevatedCard: {},
   headingContainer: {},
   headerText: {},
-  cardImage: {},
+  cardImage: {
+    height: 180,
+  },
   cardBody: {},
   footer: {},
   Links: {},
